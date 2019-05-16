@@ -24,6 +24,7 @@ It really shouldn't interfere with anything else on the website since only this 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js'></script>
 <script src='js/gcal.min.js'></script>
 
+	<link href="css/wm_lrc.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 body,td,th {
 	font-family: Calibri, Arial, Helvetica, sans-serif;
@@ -127,14 +128,13 @@ src="https://www.facebook.com/tr?id=1749412448667318&ev=PageView
   <div class="header masthead"><a href="index.html"><img src="images/lrc_header.jpg" alt="LRC Header" name="LRC Header" width="950" height="176" id="LRC" style="background: #C6D580; display:block;"></a><div class="signup"><a href="signup.html"><img src="images/signup.png" alt="Signup"></a></div>
     <!-- end .header --></div>
     <div class="header">
-	<ul id="nav"><li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="residential.html">RESIDENTIAL</a></li>
-      <li><a href="commercial.html">COMMERCIAL</a></li>
-      <li><a href="recycledproducts.html">RECYCLED PRODUCTS</a></li>
-      <li><a href="findus.html">FIND US</a></li>
-      <li><a href="learn.html">LEARN</a></li><div class="clear"></div>
-      </ul><!-- end .header --></div>
+				<nav class="header__nav"></nav>
+		</div>
+		<script>
+		$( ".header__nav" ).load( "index.html .header__nav", function() {
+			alert( "Load was performed." );
+		});
+		</script>
   <div class="sublevel">
 		<div class="sidebar1" style="padding-top:0em;">
 				<img src="images/SPRINGHOURS1.jpg" width="auto" height="auto" alt="" style="width:285px; min-width:100%; height:auto;"/><br>

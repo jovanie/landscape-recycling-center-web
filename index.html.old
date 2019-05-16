@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Landscape Recycling Center</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/tinynav.js"></script>
+
+	<link href="lrc_style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body,
+		td,
+		th {
+			font-family: Calibri, Arial, Helvetica, sans-serif;
+		}
+	</style>
+	<script>
+		$(function() {
+
+			$("#nav").tinyNav({
+				active: 'selected', // String: Set the "active" class
+				header: 'NAVIGATION', // String: Specify text for "header" and show header instead of the active item
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+		/***
+								    Simple jQuery Slideshow Script
+								    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+								***/
+
+		function slideSwitch() {
+			var $active = $('#slideshow A.active');
+
+			if ($active.length == 0) $active = $('#slideshow A:last');
+
+			// use this to pull the images in the order they appear in the markup
+			var $next = $active.next().length ? $active.next() :
+				$('#slideshow A:first');
+
+			// uncomment the 3 lines below to pull the images in random order
+
+			// var $sibs  = $active.siblings();
+			// var rndNum = Math.floor(Math.random() * $sibs.length );
+			// var $next  = $( $sibs[ rndNum ] );
+
+
+			$active.addClass('last-active');
+
+			$next.css({
+					opacity: 0.0
+				})
+				.addClass('active')
+				.animate({
+					opacity: 1.0
+				}, 1000, function() {
+					$active.removeClass('active last-active');
+				});
+		}
+
+		$(function() {
+			setInterval("slideSwitch()", 6000);
+		});
+	</script>
+	<style type="text/css">
+		/*** set the width and height to match your images **/
+
+		#slideshow {
+			position: relative;
+			height: 325px;
+		}
+
+		#slideshow a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 8;
+			opacity: 0.0;
+		}
+
+		#slideshow a.active {
+			z-index: 10;
+			opacity: 1.0;
+		}
+
+		#slideshow a.last-active {
+			z-index: 9;
+		}
+	</style>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1749412448667318');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1749412448667318&ev=PageView&noscript=1"
+/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-104200669-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<div class="container">
+		<div class="header masthead">
+			<div class="header masthead"><a href="index.html"><img src="images/lrc_header.jpg" alt="LRC Header" name="LRC Header" width="950" height="176" id="LRC" style="background: #C6D580; display:block;"></a>
+				<div class="signup"><a href="signup.html"><img src="images/signup.png" alt="Signup"></a></div>
+				<!-- end .header -->
+			</div>
+			<div class="header">
+				<ul id="nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="residential.html">RESIDENTIAL</a></li>
+					<li><a href="commercial.html">COMMERCIAL</a></li>
+					<li><a href="recycledproducts.html">RECYCLED PRODUCTS</a></li>
+					<li><a href="findus.html">FIND US</a></li>
+					<li><a href="learn.html">LEARN</a></li>
+					<div class="clear"></div>
+				</ul>
+				<!-- end .header -->
+			</div>
+
+			<div class="header border_bottom">
+				<div id="slideshow">
+					
+					<a href="http://landscaperecyclingcenter.org/maymulchsale.html" class="active" target=""><img src="images/banners/2019_Banner_950x323_May_Mulch_Sale_20.jpg"  alt=""/></a>
+					<a href="https://youtu.be/qOrBxXvgL84" class="" target="_blank"><img src="http://landscaperecyclingcenter.org/images/banners/2019_Banner_950x323_Lush_Green_Yard.jpg"  alt=""/></a>
+					<a href="http://www.landscaperecyclingcenter.org/byob.html" class=""><img src="http://landscaperecyclingcenter.org/images/banners/2019_Banner_950x323_BYOB_Card.jpg"  alt=""/></a>
+					<a href="https://www.youtube.com/channel/UCkwmirzociS2HDcKjonCHYw/featured" class="" target="_blank"><img src="images/banners/2018_Banner_950x323_LRC_YouTube.jpg" alt="Learn about LRC" /></a>
+					<!-- Compost Bucket Temporarily Disabled 10/30/2018 <a href="recycledproducts.html#sgcompost" class=""><img src="images/banners/2018_Banner_950x323_Bucket_Refills" alt=""/></a> -->
+					<!-- Brick Pavers Disabled 11/14/2018 <a href="learn.html" class=""><img src="images/banners/2018_Banner_950x323_Broadway_Brick_Pavers.jpg"  alt=""/></a> -->
+					<!--
+					NOTE TO DEVELOPER: For some reason this clear div breaks the slideshow's loop. Commenting it out fixes it.
+					<div class="clear"></div>
+					-->
+
+				</div>
+				<!-- end .header -->
+			</div>
+
+			<div class="sidebar1" style="padding-top:0em; text-align:left;">
+				<img src="images/SPRINGHOURS1.jpg" width="auto" height="auto" alt="" style="width:285px; min-width:100%; height:auto;"/><br>
+				<!--<p><em>Effective December 17th - March 3rd</em></p>-->
+				<p>
+					<strong class=" darkgreen ">
+						OPEN<br></strong>
+					<strong>Monday, May 20</strong><br>
+					<a href="calendar.html ">9:00am - 4:00pm</a>
+				</p>
+				<p>
+					<strong class=" darkgreen ">
+					OPEN<br></strong>
+					<strong>Monday – Saturday</strong><br>8:00am – 4:00pm<br>
+				</p>
+				<p><strong class="darkgreen ">
+					CLOSED<br></strong>
+					<strong>Sunday & Holidays</strong><br>
+				</p>
+
+				<p><a href="calendar.html ">Holiday Calendar</a></p>
+				<p>
+
+					<strong class="darkgreen ">Contact</strong><br> 1210 East University, Urbana<br> 217 344-LEAF (5323)<br>
+					<a href="findus.html ">Directions</a></p>
+				<div class="city_logos no-top-margin "><a href="http://urbanaillinois.us/ " target="_blank "><img src="images/cityofurbana_logo.jpg " width="47 " height="60 " alt="city of urbana "></a><a href="http://champaignil.gov " target="_blank
+				 "><img src="images/City_of_Champaign-Logo-Black.svg " width="72 " height="63 " alt="city of champaign "></a>
+					<span class="home_p " style="font-size: 80%; margin-top: 10px; float: left; width: 100%; text-align: left; ">The Landscape Recycling Center is operated through a cooperative agreement between the cities of Champaign and Urbana, Illinois. </span>
+				</div>
+				<div class="clear "></div>
+				<!-- end .sidebar1 -->
+			</div>
+
+			<div class="content ">
+				<div class="homepagespring_tip ">
+					<h1>Welcome!</h1>
+					<p class="home_p " style="text-align: left; ">We are a not-for-profit facility that turns local yard debris such as grass clippings, brush and plant cuttings into useful mulches and compost for the home and garden. Other products such as granite fines, asphalt millings and street pavers are
+						materials that have been specifically salvaged for recycling. All of our products are for sale to residents, landscapers, nurseries and other businesses.</p>
+
+					<div class="fb-page " data-href="https://www.facebook.com/LandscapeRecyclingCenter " data-tabs="timeline " data-height="450px " data-small-header="true " data-adapt-container-width="false " data-hide-cover="true " data-show-facepile="false ">
+						<div class="fb-xfbml-parse-ignore ">
+							<blockquote cite="https://www.facebook.com/LandscapeRecyclingCenter "><a href="https://www.facebook.com/LandscapeRecyclingCenter ">Landscape Recycling Center</a></blockquote>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- end .content -->
+			</div>
+			<div class="footer ">
+				<div class="social "><a href="https://www.facebook.com/LandscapeRecyclingCenter " target="_blank "><img src="images/facebook_button_footer.png " width="25 " height="25 " alt="Facebook "></a></div>
+				<div class="foot_content ">Copyright 2019 Landscape Recycling Center | <a href="http://www.landscaperecyclingcenter.org ">www.landscaperecyclingcenter.org</a> | 1210 East University, Urbana, Illinois | p217.344.5323</div>
+				<div class="clear "></div>
+				<!-- end .footer -->
+			</div>
+			<!-- end .container -->
+		</div>
+</body>
+
+</html>

@@ -9,6 +9,7 @@
 	<script src="js/tinynav.js"></script>
 
 	<link href="lrc_style.css" rel="stylesheet" type="text/css">
+		<link href="css/wm_lrc.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		body,
 		td,
@@ -20,7 +21,8 @@
 		$(function() {
 
 			$("#nav").tinyNav({
-				active: 'selected', // String: Set the "active" class
+				active: 'selected', // String: Set
+				the "active" class
 				header: 'NAVIGATION', // String: Specify text for "header" and show header instead of the active item
 			});
 
@@ -156,22 +158,55 @@
 				<!-- end .header -->
 			</div>
 			<div class="header">
-				<ul id="nav">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="residential.html">RESIDENTIAL</a></li>
-					<li><a href="commercial.html">COMMERCIAL</a></li>
-					<li><a href="recycledproducts.html">RECYCLED PRODUCTS</a></li>
-					<li><a href="findus.html">FIND US</a></li>
-					<li><a href="learn.html">LEARN</a></li>
-					<div class="clear"></div>
-				</ul>
-				<!-- end .header -->
+				<nav class="header__nav">
+					<ul class="header__nav__menu">
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link header__nav__menu__entry__link--active" href="index.html">
+								HOME
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="about.html">
+								ABOUT
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="disposal.html">
+								DISPOSAL
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="recycledproducts.html">
+								RECYCLED PRODUCTS
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="delivery.html">
+								DELIVERY
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="findus.html">
+								FIND US
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="faq.html">
+								FAQ
+							</a>
+						</li>
+						<li class="header__nav__menu__entry">
+							<a class="header__nav__menu__entry__link" href="learn.html">
+								LEARN
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 
 			<div class="header border_bottom">
 				<div id="slideshow">
-					
+
 					<a href="http://landscaperecyclingcenter.org/maymulchsale.html" class="active" target=""><img src="images/banners/2019_Banner_950x323_May_Mulch_Sale_20.jpg"  alt=""/></a>
 					<a href="https://youtu.be/qOrBxXvgL84" class="" target="_blank"><img src="http://landscaperecyclingcenter.org/images/banners/2019_Banner_950x323_Lush_Green_Yard.jpg"  alt=""/></a>
 					<a href="http://www.landscaperecyclingcenter.org/byob.html" class=""><img src="http://landscaperecyclingcenter.org/images/banners/2019_Banner_950x323_BYOB_Card.jpg"  alt=""/></a>

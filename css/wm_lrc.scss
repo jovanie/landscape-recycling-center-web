@@ -1,0 +1,44 @@
+.header {
+	text-align: center;
+	padding: 0px;
+
+  &__nav {
+    display:block;
+    background: url('../images/topnav_background.jpg') repeat-x top #96835f;
+    padding: 0;
+    margin: 0;
+
+    &__menu {
+    	list-style: none;
+    	border-top: 1px solid #666;
+    	margin-bottom: 15px;
+      text-align: center;
+      display: flex;
+
+      &__entry {
+        flex: 100;
+      	border-bottom: 1px solid #666;
+        list-style: none;
+        padding: 9px 0px 9px 25px;
+        font-size: 120%;
+        font-size:1.2em;
+        float: left;
+        white-space: nowrap;
+
+        &__link {
+          font-weight: bold;
+          color: #43322e;
+        }
+        &__link, &link:visited, &__link:link {
+          color:#43322e;
+        }
+        &__link:hover {
+          color:black;
+        }
+      }
+      &__entry:last-of-type {
+        padding-right:25px;
+      }
+    }
+  }
+}
