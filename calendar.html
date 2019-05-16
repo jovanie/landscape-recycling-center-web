@@ -49,19 +49,6 @@ body,td,th {
 
 </style>
 <script>
-$(function () {
-
-  $("#nav").tinyNav({
-  active: 'selected', // String: Set the "active" class
-  header: 'NAVIGATION', // String: Specify text for "header" and show header instead of the active item
-});
-
-});
-
-
-</script>
-
-<script>
   $(document).ready(function() {
     $('#calendar').fullCalendar({
       header: {
@@ -131,9 +118,7 @@ src="https://www.facebook.com/tr?id=1749412448667318&ev=PageView
 				<nav class="header__nav"></nav>
 		</div>
 		<script>
-		$( ".header__nav" ).load( "index.html .header__nav", function() {
-			alert( "Load was performed." );
-		});
+		$( ".header__nav" ).load( "index.html .header__nav");
 		</script>
   <div class="sublevel">
 		<div class="sidebar1" style="padding-top:0em;">
