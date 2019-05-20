@@ -5,11 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Landscape Recycling Center</title>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/tinynav.js"></script>
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link href="lrc_style.css" rel="stylesheet" type="text/css">
-		<link href="css/wm_lrc.css" rel="stylesheet" type="text/css">
+	<link href="css/wm_lrc.min.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		body,
 		td,
@@ -152,12 +152,12 @@
 		ga('send', 'pageview');
 	</script>
 	<div class="container">
-		<div class="header masthead">
-			<div class="header masthead"><a href="index.html"><img src="images/lrc_header.jpg" alt="LRC Header" name="LRC Header" width="950" height="176" id="LRC" style="background: #C6D580; display:block;"></a>
-				<div class="signup"><a href="signup.html"><img src="images/signup.png" alt="Signup"></a></div>
-				<!-- end .header -->
-			</div>
 			<div class="header">
+				<div class="header__banner">
+					<a class="header__banner__logo" href="index.html"><img src="images/lrc_header.jpg" alt="LRC Header" name="LRC Header" width="950" height="176" id="LRC" style="background: #C6D580; display:block;"></a>
+					<div class="header__banner__signup"><a href="signup.html"><img src="images/signup.png" alt="Signup"></a></div>
+					<div href="#" class="fas fa-bars header__banner__button"></div>
+				</div>
 				<nav class="header__nav">
 					<ul class="header__nav__menu">
 						<li class="header__nav__menu__entry">
@@ -204,7 +204,7 @@
 				</nav>
 			</div>
 
-			<div class="header border_bottom">
+			<div class="border_bottom">
 				<div id="slideshow">
 
 					<a href="http://landscaperecyclingcenter.org/maymulchsale.html" class="active" target=""><img src="images/banners/2019_Banner_950x323_May_Mulch_Sale_20.jpg"  alt=""/></a>
@@ -222,6 +222,22 @@
 				<!-- end .header -->
 			</div>
 
+			<div class="content">
+				<div class="homepagespring_tip ">
+					<h1>Welcome!</h1>
+					<p class="home_p " style="text-align: left; ">We are a not-for-profit facility that turns local yard debris such as grass clippings, brush and plant cuttings into useful mulches and compost for the home and garden. Other products such as granite fines, asphalt millings and street pavers are
+						materials that have been specifically salvaged for recycling. All of our products are for sale to residents, landscapers, nurseries and other businesses.</p>
+
+					<div class="fb-page " data-href="https://www.facebook.com/LandscapeRecyclingCenter " data-tabs="timeline " data-height="450px " data-small-header="true " data-adapt-container-width="false " data-hide-cover="true " data-show-facepile="false ">
+						<div class="fb-xfbml-parse-ignore ">
+							<blockquote cite="https://www.facebook.com/LandscapeRecyclingCenter "><a href="https://www.facebook.com/LandscapeRecyclingCenter ">Landscape Recycling Center</a></blockquote>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- end .content -->
+			</div>
 			<div class="sidebar1" style="padding-top:0em; text-align:left;">
 				<img src="images/SPRINGHOURS1.jpg" width="auto" height="auto" alt="" style="width:285px; min-width:100%; height:auto;"/><br>
 				<!--<p><em>Effective December 17th - March 3rd</em></p>-->
@@ -253,23 +269,6 @@
 				<div class="clear "></div>
 				<!-- end .sidebar1 -->
 			</div>
-
-			<div class="content ">
-				<div class="homepagespring_tip ">
-					<h1>Welcome!</h1>
-					<p class="home_p " style="text-align: left; ">We are a not-for-profit facility that turns local yard debris such as grass clippings, brush and plant cuttings into useful mulches and compost for the home and garden. Other products such as granite fines, asphalt millings and street pavers are
-						materials that have been specifically salvaged for recycling. All of our products are for sale to residents, landscapers, nurseries and other businesses.</p>
-
-					<div class="fb-page " data-href="https://www.facebook.com/LandscapeRecyclingCenter " data-tabs="timeline " data-height="450px " data-small-header="true " data-adapt-container-width="false " data-hide-cover="true " data-show-facepile="false ">
-						<div class="fb-xfbml-parse-ignore ">
-							<blockquote cite="https://www.facebook.com/LandscapeRecyclingCenter "><a href="https://www.facebook.com/LandscapeRecyclingCenter ">Landscape Recycling Center</a></blockquote>
-						</div>
-					</div>
-
-
-				</div>
-				<!-- end .content -->
-			</div>
 			<div class="footer ">
 				<div class="social "><a href="https://www.facebook.com/LandscapeRecyclingCenter " target="_blank "><img src="images/facebook_button_footer.png " width="25 " height="25 " alt="Facebook "></a></div>
 				<div class="foot_content ">Copyright 2019 Landscape Recycling Center | <a href="http://www.landscaperecyclingcenter.org ">www.landscaperecyclingcenter.org</a> | 1210 East University, Urbana, Illinois | p217.344.5323</div>
@@ -278,6 +277,7 @@
 			</div>
 			<!-- end .container -->
 		</div>
+		<script src="js/lrc_animations.js"></script>
 </body>
 
 </html>
