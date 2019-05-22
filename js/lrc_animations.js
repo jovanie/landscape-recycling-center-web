@@ -6,10 +6,10 @@ $(".header__banner__button").click(function() {
 $(document).ready(function() {
 	function checkWidth() {
 		var windowWidth = $(window).width();
-		if (windowWidth <= 930) {
+		if (windowWidth <= 951) {
 			$(".header__nav__menu").hide();
 		}
-		if (windowWidth > 930) {
+		if (windowWidth > 951) {
 			$(".header__nav__menu").show();
 		}
 	}
