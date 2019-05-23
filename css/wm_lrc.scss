@@ -98,8 +98,8 @@ body {
 	.header {
 		&__banner {
 			position: relative;
-		width:100%;
-		height: 8em;
+			width:100%;
+			height: 20vw;
 			&__logo {
 				position: absolute;
 				margin: 0;padding:0;
@@ -109,11 +109,12 @@ body {
 				top:50%;
 				transform: translate(0%,-50%);
 				float:none;
-				height:50%;
+				width:calc(100% - 7em);
+				height:auto;
 
 				img {
-					height: 100%;
-					width:auto;
+				width:100%;
+				height:auto;
 				}
 			}
 
