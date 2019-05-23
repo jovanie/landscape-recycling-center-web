@@ -58,12 +58,18 @@ body {
 			display: block;
 			list-style: none;
 			text-align: center;
+			display:inline-block;
 			display: flex;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display:flex;
 
 			&__entry {
 				flex: 100;
 				list-style: none;
-				padding: 9px 0 9px 25px;
+				padding: 9px 25px 9px 0;
 				font-size: 120%;
 				font-size: 1.2em;
 				float: left;
@@ -85,8 +91,8 @@ body {
 				}
 			}
 
-			&__entry:last-of-type {
-				padding-right: 25px;
+			&__entry:first-of-type {
+				padding-left: 15px;
 			}
 		}
 	}
