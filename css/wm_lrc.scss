@@ -117,6 +117,13 @@ body {
 				height:auto;
 				}
 			}
+			&__signup {
+				display:none;
+
+				img {
+					width: 100%;
+				}
+			}
 
 			&__button,
 			&__button--mobile {
@@ -134,6 +141,7 @@ body {
 
 		&__nav {
 			position: relative;
+			height:0;
 
 			&__menu {
 				display: block;
@@ -177,7 +185,7 @@ body {
 					&__link:hover {}
 				}
 
-				&__entry:last-of-type {}
+				&__entry:first-of-type {padding-left: 0;}
 			}
 		}
 	}
