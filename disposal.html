@@ -5,6 +5,7 @@
 	<!--
 	TODO: Update Sidebar content
 	TODO: Fix Sidebar break
+	TODO: Make line breaks for table, lists, and end paragraphs the same.
 	-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -135,10 +136,9 @@
 		<div class="content">
 			<h1>Disposal</h1>
 			<p>
-				LRC is a resource for Champaign County residential and commercial customers. Our goal is to be self-supporting through the collection of disposal fees for landscape waste and the sale of recycled landscape <a
-					href="/recycledproducts.html">products</a>.
+				LRC is a resource for Champaign County residential and commercial customers. Our goal is to be self-supporting through the collection of disposal fees for landscape waste and the sale of recycled landscape <a href="/recycledproducts.html">products</a>.
 			</p>
-			<p><strong>Unacceptable items</strong><br>
+				<h2>Unacceptable items</h2>
 				<ul>
 					<li>Animal and/or food wastes</li>
 					<li>Concrete, riprap or rock</li>
@@ -149,10 +149,11 @@
 					<li>Tree stumps or root wads</li>
 					<li>Wood pallets</li>
 				</ul>
+				<h2>Acceptable materials and disposal fees</h2>
+			<p>
+				<strong>Bagged plant material (paper bags only!)</strong>
 			</p>
-			<p><strong>Acceptable Materials and Disposal fees</strong><br>
-				Bagged plant material (Paper bags only!)</p>
-				<ul>
+			<ul>
 				<table>
 					<tr>
 						<td>1-2 bags</td>
@@ -174,76 +175,109 @@
 						<td>Loose landscape material</td>
 						<td>$5 minimum for quantities less than a cubic yard.</td>
 					</tr>
-				</table></ul>
+				</table>
+			</ul>
 
 
-			<p><strong>Bulk plant material</strong><br>
-				The fee for disposal of items arriving in bulk is calculated on a per cubic yard basis and rounded to the nearest ½ cubic yard. Quantities less than a cubic yard are charged a minimum fee of $5.00, except commercial compactor and roll-off loads, which are charged for a minimum of 5 cubic yards.
+			<p><strong>Bulk plant material</strong></p>
+			<p>
+				The fee for disposal of items arriving in bulk is calculated on a per cubic yard basis and rounded to the nearest ½ cubic yard. Quantities less than a cubic yard are charged a minimum fee of $5.00, except commercial
+				compactor and roll-off loads, which are charged for a minimum of 5 cubic yards.
 			</p>
-
-			<ul><table>
-				<tr>
-					<td>Leaves and grass clippings</td>
-					<td>$9/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Brush and plant cuttings<br>
-						(diameter 10 inches or less, length 8 feet or less)</td>
-					<td>$9/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Tree and shrub material</td>
-					<td>$9/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Bulk wood (loose and separated from other yard waste;<br>
-						limbs greater than 10 inches in diameter must be cut into lengths<br>
-						of 3 feet or less and separated from other yard waste)</td>
-					<td>$16/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Sod or clean soil</td>
-					<td>$9/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Wood chips</td>
-					<td>$9/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Mixed loads</td>
-					<td>$13/cubic yard</td>
-				</tr>
-				<tr><td></br><strong>* Commercial Customers Only</strong></td></tr>
-				<tr>
-					<td>Compactor trucks segregated</td>
-					<td>$12/cubic yard</td>
-				</tr>
-				<tr>
-					<td>Roll-off trucks</td>
-					<td>$16/cubic yard</td>
-				</tr>
-				<tr>
-					<td>City street leaves (seasonal sweepings)</td>
-					<td>$12/cubic yard</td>
-				</tr>
-			</table></ul>
+<ul>
+	
+				<table class="top-al">
+					<style>
+						.top-al, .top-al tr, .top-al td {
+							vertical-align:top;
+						}
+						.top-al td {width:100%;max-width:40%;}
+						.table-align-right {
+							
+							vertical-align:top;
+							white-space:nowrap;
+							text-align:right;
+						}
+						h1, h2, table, p, ul, {
+							margin-bottom:0;
+							padding-bottom:0.5em;
+						}
+						ul table {
+							margin-bottom:0;
+							padding-bottom:0;
+						}
+							tr, td, table {
+								margin-left:0;
+								padding-left:0;
+							}
+					</style>
+					<tr>
+						<td>Leaves and grass clippings</td>
+						<td class="table-align-right">$9/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Brush and plant cuttings<br> (diameter 10 inches or less, length 8 feet or less)</td>
+						<td class="table-align-right">$9/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Tree and shrub material</td>
+						<td class="table-align-right">$9/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Bulk wood (loose and separated from other yard waste;<br> limbs greater than 10 inches in diameter must be cut into lengths<br> of 3 feet or less and separated from other yard waste)</td>
+						<td  class="table-align-right">$16/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Sod or clean soil</td>
+						<td class="table-align-right">$9/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Wood chips</td>
+						<td class="table-align-right">$9/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Mixed loads</td>
+						<td class="table-align-right">$13/cubic yard</td>
+					</tr>
+					<tr>
+						<td>
+							</br><strong>Commercial customers only</strong></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Compactor trucks segregated</td>
+						<td>$12/cubic yard</td>
+					</tr>
+					<tr>
+						<td>Roll-off trucks</td>
+						<td>$16/cubic yard</td>
+					</tr>
+					<tr>
+						<td>City street leaves (seasonal sweepings)</td>
+						<td>$12/cubic yard</td>
+					</tr>
+				</table>
+			</ul>
 			<p>NOTE: Please do not mix brush with compostable materials such as grass and leaves. When mixed material is composted and screened, the shredded brush material gets separated and combined with extraneous trash material.</p>
 
-			<p><strong>Rules and regulations</strong><br>
+			<p>
+				<h2>Rules and regulations</h2>
 				<ul>
 					<li>All users must receive a ticket from the gatekeeper, whether they are depositing or receiving landscape materials.</li>
-					<li>All acceptable materials must be deposited in designated areas by user and <strong>must be free of refuse</strong>. LRC is required to report to the Illinois Environmental Protection Agency for prosecution any user found disposing of refuse and/or unacceptable material. Violators will also be suspended from the site. Drivers are responsible for their loads and must remove all unacceptable material before dumping.</li>
-					<li>The City of Urbana on behalf of an Intergovernmental Agreement between the City of Urbana and the City of Champaign operates the Landscape Recycling Center. This intergovernmental facility, its agents and/or employees make no guarantee or warranty of the products available at this facility and assume no liability for any damages that may occur to persons or property while on the site.</li>
+					<li>All acceptable materials must be deposited in designated areas by user and <strong>must be free of refuse</strong>. LRC is required to report to the Illinois Environmental Protection Agency for prosecution any user found disposing of refuse and/or
+						unacceptable material. Violators will also be suspended from the site. Drivers are responsible for their loads and must remove all unacceptable material before dumping.</li>
+					<li>The City of Urbana on behalf of an Intergovernmental Agreement between the City of Urbana and the City of Champaign operates the Landscape Recycling Center. This intergovernmental facility, its agents and/or employees make no guarantee or warranty
+						of the products available at this facility and assume no liability for any damages that may occur to persons or property while on the site.</li>
 				</ul>
-				<p><strong>* Commercial Customers Only</strong></p>
 				<ul>
+					<li style="list-style-type:none;"><strong>Commercial customers only</strong></li>
 					<li>Compactor and roll-off trucks are to be clearly marked on driver's side with full capacity in cubic yards (i.e. 18 cubic yards).</li>
 					<li>All compactor trucks are charged as mixed loads from February-September and segregated loads from October-January.</li>
 					<li>Partial compactor loads will be based on position of compactor blade as determined by LRC site personnel.</li>
 					<li>Charge accounts are available upon approval of completed <a href="/files/LRC_Charge_Application.pdf">credit application.</a></li>
 				</ul>
 			</p><br><br>
-				<!-- end .content -->
+			<!-- end .content -->
 		</div>
 		<div class="sidebar1" style="padding-top:0em; text-align:left;">
 			<img src="images/SPRINGHOURS1.jpg" width="auto" height="auto" alt="" style="width:285px; min-width:100%; height:auto;" /><br>
