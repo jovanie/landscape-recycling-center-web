@@ -63,6 +63,11 @@ a:hover, a:active, a:focus {
 	background: #FFFFFF url(images/shovelgirl.png) no-repeat bottom;
 	min-height: 100%;
 }
+.container--white {
+	position: relative;
+	background:  #FFFFFF url(images/secondlevel_bottom_background.jpg) no-repeat bottom;
+	min-height: 100%;
+}
 .header {
 	text-align: center;
 	padding: 0px;
