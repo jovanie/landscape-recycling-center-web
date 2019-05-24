@@ -1,823 +1,744 @@
 @charset "utf-8";
 
-.signup
-{
-	position: absolute;
-	top: 0px;
-	right:5%;
-	width: 35%;
+.signup {
+  position: absolute;
+  top: 0px;
+  right: 5%;
+  width: 35%;
+}
 
+.signup img {
+  width: 100%;
 }
-.signup img { width: 100%; }
 
-.home_p
-{
-	margin-bottom: 8px;
-	line-height: 115%;
+.home_p {
+  margin-bottom: 8px;
+  line-height: 115%;
 }
-.homepagespring_tip h2
-{
-	color: #2a5d2e;
+
+.homepagespring_tip h2 {
+  color: #2a5d2e;
 }
+
 body {
-	font-family: "Calibri",Arial, Helvetica, sans-serif;
-	background: url(images/body_backgroundwide.jpg) center top repeat-y #3c2c1d;
-	margin: 0;
-	padding: 0;
-	color: #000;
+  font-family: "Calibri", Arial, Helvetica, sans-serif;
+  background: url(images/body_backgroundwide.jpg) center top repeat-y #3c2c1d;
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
-/* ~~ Element/tag selectors ~~ */
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists.*/
-	padding: 0;
-	margin: 0;
-}
-h1 { line-height: 30px; }
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
-	padding-right: 15px;
-	padding-left: 15px;
 
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+  /* Due to variations between browsers, it's best practices to zero padding and margin on lists.*/
+  padding: 0;
+  margin: 0;
 }
+
+h1 {
+  line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 a img {
-	border: none;
+  border: none;
 }
 
 a:link {
-	color: #e2801d;
-	text-decoration: none;
+  color: #e2801d;
+  text-decoration: none;
 }
+
 a:visited {
-	color: #e2801d;
-	text-decoration: none;
+  color: #e2801d;
+  text-decoration: none;
 }
+
 a:hover, a:active, a:focus {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .container, .footer {
-	width: 950px;
-	margin: 0 auto;
+  width: 950px;
+  margin: 0 auto;
 }
+
 .container {
-	position: relative;
-	background: #FFFFFF url(images/shovelgirl.png) no-repeat bottom;
-	min-height: 100%;
+  position: relative;
+  background: #FFFFFF url(images/shovelgirl.png) no-repeat bottom;
+  min-height: 100%;
 }
-.container--white {
-	position: relative;
-	background:  #FFFFFF url(images/secondlevel_bottom_background.jpg) no-repeat bottom;
-	min-height: 100%;
-}
+
 .header {
-	text-align: center;
-	padding: 0px;
-
+  text-align: center;
+  padding: 0px;
 }
 
-.header #nav
-{
-	background: url(images/topnav_background.jpg) repeat-x top #96835f;
-}
-.border_bottom
-{
-	border-bottom: #696463 solid 1px;
-	background: #fff;
-}
-.clear
-{
-	clear: both;
+.header #nav {
+  background: url(images/topnav_background.jpg) repeat-x top #96835f;
 }
 
-#slideshow img
-{
-	width: 950px;
-	height: 322px;
+.border_bottom {
+  border-bottom: #696463 solid 1px;
+  background: #fff;
 }
 
-.sidebar1 {
-	float: right;
-	width: 328px;
-	background: #eae5dd;
-	padding-bottom: 10px;
-	top:0;
-	bottom:0;
-
-}
-.sidebar1 img
-{
-	margin: 20px 0 0 0;
-}
-.sidebar1 h2
-{
-	color: #325c2c;
+.clear {
+  clear: both;
 }
 
-.darkgreen { color: #2a5d2e; }
+#slideshow img {
+  width: 950px;
+  height: 322px;
+}
+
+.darkgreen {
+  color: #2a5d2e;
+}
 
 .content {
-	padding: 10px 0;
-	width: 620px;
-	float: right;
-	/*border-right: #696463 solid 1px;*/
-	min-height: 626px;
+  padding: 10px 0;
+  width: 620px;
+  float: right;
+  /*border-right: #696463 solid 1px;*/
+  min-height: 626px;
 }
 
 .content ul, .content ol {
-	padding: 0 15px 15px 40px;
+  padding: 0 15px 15px 40px;
 }
 
 #nav ul {
-	list-style: none;
-	border-top: 1px solid #666;
-	margin-bottom: 15px;
+  list-style: none;
+  border-top: 1px solid #666;
+  margin-bottom: 15px;
 }
+
 #nav ul li {
-	border-bottom: 1px solid #666;
+  border-bottom: 1px solid #666;
 }
+
 #nav ul a, #nav ul a:visited {
-	padding: 5px 5px 5px 15px;
-	display: block;
-	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
-	text-decoration: none;
-	background: #C6D580;
+  padding: 5px 5px 5px 15px;
+  display: block;
+  width: 160px;
+  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+  text-decoration: none;
+  background: #C6D580;
 }
+
 #nav ul a:hover, #nav ul a:active, #nav ul a:focus {
-	background: #ADB96E;
-	color: #FFF;
-	text-decoration: none;
+  background: #ADB96E;
+  color: #FFF;
+  text-decoration: none;
 }
 
-.header #nav ul
-{
-	text-align: center;
-}
-.header #nav li
-{
-	list-style: none;
-	padding: 9px 0px 9px 25px;
-	font-size: 120%;
-	float: left;
-}
-.header #nav li a:link, .header #nav li a:visited
-{
-	font-weight: bold;
-	color: #43322e;
-}
-.header #nav li a:active, .header #nav li a:hover
-{
-	color: #000;
+.header #nav ul {
+  text-align: center;
 }
 
-h1
-{
-	color: #325c2c;
+.header #nav li {
+  list-style: none;
+  padding: 9px 0px 9px 25px;
+  font-size: 120%;
+  float: left;
 }
-h2
-{
-	font-size: 120%;
+
+.header #nav li a:link, .header #nav li a:visited {
+  font-weight: bold;
+  color: #43322e;
 }
-h3
-{
-	font-size: 110%;
+
+.header #nav li a:active, .header #nav li a:hover {
+  color: #000;
 }
+
+h1 {
+  color: #325c2c;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 110%;
+}
+
 /* ~~ The footer ~~ */
 .footer {
-	padding: 10px 0;
-	background: #44332e;
-	position: relative;/* this gives IE6 hasLayout to properly clear */
-	clear: both;
-	color: #fff;
-	font-size: 90%;
-	bottom: 0px;
+  padding: 10px 0;
+  background: #44332e;
+  position: relative;
+  /* this gives IE6 hasLayout to properly clear */
+  clear: both;
+  color: #fff;
+  font-size: 90%;
+  bottom: 0px;
 }
 
-.social
-{
-	margin-left: 20px;
-	float: left;
-	width: 25px;
-	max-width: 25px;
-	max-height: 25px;
+.social {
+  margin-left: 20px;
+  float: left;
+  width: 25px;
+  max-width: 25px;
+  max-height: 25px;
 }
 
-.foot_content
-{
-	margin-left: 10px;
-	float: left;
-	padding-top: 5px;
-	width: 875px;
+.foot_content {
+  margin-left: 10px;
+  float: left;
+  padding-top: 5px;
+  width: 875px;
 }
 
-table
-{
-	margin: 10px;
-	width: 95%;
-	margin-bottom: 30px;
+table {
+  margin: 10px;
+  width: 95%;
+  margin-bottom: 30px;
 }
 
-.no-top-margin img
-{
-	margin-top: 0px;
-	padding-top: 10px;
+.no-top-margin img {
+  margin-top: 0px;
+  padding-top: 10px;
 }
 
-.homepagespring_tip
-{
-	width: 375px;
-	max-width: 375px;
-	float: right;
-	margin-right: 10px;
-	font-size: 90%;
+.homepagespring_tip {
+  width: 375px;
+  max-width: 375px;
+  float: right;
+  margin-right: 10px;
+  font-size: 90%;
 }
 
-.homepagespring_tip h1
-{
-	margin-bottom: 0px;
+.homepagespring_tip h1 {
+  margin-bottom: 0px;
 }
 
-.city_logos
-{
-	margin-left: 15px;	float: left;
+.city_logos {
+  margin-left: 15px;
+  float: left;
 }
 
-.city_logos img
-{
-	margin-right: 10px;		float: left;
+.city_logos img {
+  margin-right: 10px;
+  float: left;
 }
 
-.fb-page
-{
-	padding-left: 15px;
+.fb-page {
+  padding-left: 15px;
 }
 
-
-
-.hide, .tinynav { display: none; }
+.hide, .tinynav {
+  display: none;
+}
 
 /* CSS Document */
-
-	/************************************************************************************
+/************************************************************************************
 smaller than 980
 *************************************************************************************/
 @media screen and (max-width: 930px) {
-html { -webkit-text-size-adjust: none; }
+  html {
+    -webkit-text-size-adjust: none;
+  }
 
-	body {
-	font-family: "Calibri",Arial, Helvetica, sans-serif;
-	background: none;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	}
-	/* ~~ Element/tag selectors ~~ */
-	ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists.*/
-		padding: 0;
-		margin: 0;
-	}
-	h1, h2, h3, h4, h5, h6, p {
-		margin-top: 0;
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-	a img {
-		border: none;
-	}
+  body {
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
 
-	a:link {
-		color: #e2801d;
-		text-decoration: none;
-	}
-	a:visited {
-		color: #e2801d;
-		text-decoration: none;
-	}
-	a:hover, a:active, a:focus {
-		text-decoration: none;
-	}
+  /* ~~ Element/tag selectors ~~ */
+  ul, ol, dl {
+    /* Due to variations between browsers, it's best practices to zero padding and margin on lists.*/
+    padding: 0;
+    margin: 0;
+  }
 
-	.container {
-		width: 100%;
-		margin: 0 auto;
-		background: #FFFFFF none;
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-	}
-	.header {
-		text-align: center;
-		padding: 0px;
+  a img {
+    border: none;
+  }
 
-	}
+  a:link {
+    color: #e2801d;
+    text-decoration: none;
+  }
 
-	.header img
-	{
-		width: 100%;
-		height: 100%;
-	}
+  a:visited {
+    color: #e2801d;
+    text-decoration: none;
+  }
 
-	#slideshow, .border_bottom
-	{
-		width: 100%;
-		height: inherit;
-	}
+  a:hover, a:active, a:focus {
+    text-decoration: none;
+  }
 
-	#slideshow img
-	{
-		max-width: 100%;
-		height: inherit;
-	}
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF none;
+  }
 
-	.header #nav
-	{
-		background: url(images/topnav_background.jpg) repeat-x top #96835f;
-	}
-	.border_bottom
-	{
-		border-bottom: #696463 solid 1px;
-	}
-	.clear
-	{
-		clear: both;
-	}
-	.sidebar1
-	{
-		float: none;
-		width: 100%;
-		margin: auto;
-		background: #eae5dd;
-		padding-bottom: 10px;
-	}
+  .header {
+    text-align: center;
+    padding: 0px;
+  }
 
-	.sidebar1 p
-	{
-	}
+  .header img {
+    width: 100%;
+    height: 100%;
+  }
 
-	.sidebar1 img
-	{
-		width: 50%;
-		height: 75%;
-		float: left;
-		margin-right: 10px;
-	}
+  #slideshow, .border_bottom {
+    width: 100%;
+    height: inherit;
+  }
 
-	.sidebar1 .city_logos img
-	{
-		width: auto;
-		height: auto;
-		float: inherit;
+  #slideshow img {
+    max-width: 100%;
+    height: inherit;
+  }
 
-	}
+  .header #nav {
+    background: url(images/topnav_background.jpg) repeat-x top #96835f;
+  }
 
-	.sidebar1 h2
-	{
-		color: #325c2c;
-	}
+  .border_bottom {
+    border-bottom: #696463 solid 1px;
+  }
 
-	.spring_tip img
-	{
-		width: 100%;
-		height: 100%;
-	}
+  .clear {
+    clear: both;
+  }
+/*
+  .sidebar1 {
+    float: none;
+    width: 100%;
+    margin: auto;
+    background: #eae5dd;
+    padding-bottom: 10px;
+  }
 
-	.homepagespring_tip
-	{
-		width: 100%;
-		max-width: 100%;
-		float: none;
-	}
+  .sidebar1 p {}
 
-	.content {
-		clear: both;
-		padding: 10px 0;
-		width: 100%;
-		margin: auto;
-		float: right;
-		border-right: none;
-	}
+  .sidebar1 img {
+    width: 50%;
+    height: 75%;
+    float: left;
+    margin-right: 10px;
+  }
 
-	.content ul, .content ol {
-		padding: 0 15px 15px 40px;
-	}
+  .sidebar1 .city_logos img {
+    width: auto;
+    height: auto;
+    float: inherit;
+  }
 
-	#nav ul {
-		list-style: none;
-		border-top: 1px solid #666;
-		margin-bottom: 15px;
-	}
-	#nav ul li {
-		border-bottom: 1px solid #666;
-	}
-	#nav ul a, #nav ul a:visited {
-		padding: 5px 5px 5px 15px;
-		display: block;
-		width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
-		text-decoration: none;
-		background: #C6D580;
-	}
-	#nav ul a:hover, #nav ul a:active, #nav ul a:focus {
-		background: #ADB96E;
-		color: #FFF;
-		text-decoration: none;
-	}
+  .sidebar1 h2 {
+    color: #325c2c;
+  }
+*/
+  .spring_tip img {
+    width: 100%;
+    height: 100%;
+  }
 
-	.header #nav ul
-	{
-		text-align: center;
-	}
-	.header #nav li
-	{
-		list-style: none;
-		padding: 9px 10px 9px 33px;
-		font-size: 120%;
-		float: left;
-	}
-	.header #nav li a:link, .header #nav li a:visited
-	{
-		font-weight: bold;
-		color: #43322e;
-	}
-	.header #nav li a:active, .header #nav li a:hover
-	{
-		color: #000;
-	}
+  .homepagespring_tip {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+  }
 
-	h1
-	{
-		color: #325c2c;
-	}
-	h2
-	{
-		font-size: 120%;
-	}
-	h3
-	{
-		font-size: 110%;
-	}
-	/* ~~ The footer ~~ */
-	.footer
-	{
-		padding: 10px 0;
-		background: #44332e;
-		position: relative;/* this gives IE6 hasLayout to properly clear */
-		clear: both;
-		color: #fff;
-		width: 100%;
-	}
+  .content {
+    clear: both;
+    padding: 10px 0;
+    width: 100%;
+    margin: auto;
+    float: right;
+    border-right: none;
+  }
 
-	.social
-	{
-		margin-left: 20px;
-		float: left;
-		width: 5%;
-		max-width: 25px;
-		max-height: 25px;
-	}
+  .content ul, .content ol {
+    padding: 0 15px 15px 40px;
+  }
 
-	.foot_content
-	{
-		margin-left: 20px;
-		float: left;
-		width: 80%;
-	}
+  #nav ul {
+    list-style: none;
+    border-top: 1px solid #666;
+    margin-bottom: 15px;
+  }
 
+  #nav ul li {
+    border-bottom: 1px solid #666;
+  }
 
+  #nav ul a, #nav ul a:visited {
+    padding: 5px 5px 5px 15px;
+    display: block;
+    width: 160px;
+    /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+    text-decoration: none;
+    background: #C6D580;
+  }
 
-	.header #nav { display: none; }
-	.tinynav
-	{
-		display:block;
-		width:100%;
-		font-size: 150%;
-	}
+  #nav ul a:hover, #nav ul a:active, #nav ul a:focus {
+    background: #ADB96E;
+    color: #FFF;
+    text-decoration: none;
+  }
 
+  .header #nav ul {
+    text-align: center;
+  }
 
-	iframe
-	{
-		width: 540px;
-		max-width: 540px;
+  .header #nav li {
+    list-style: none;
+    padding: 9px 10px 9px 33px;
+    font-size: 120%;
+    float: left;
+  }
 
-	}
+  .header #nav li a:link, .header #nav li a:visited {
+    font-weight: bold;
+    color: #43322e;
+  }
+
+  .header #nav li a:active, .header #nav li a:hover {
+    color: #000;
+  }
+
+  h1 {
+    color: #325c2c;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 110%;
+  }
+
+  /* ~~ The footer ~~ */
+  .footer {
+    padding: 10px 0;
+    background: #44332e;
+    position: relative;
+    /* this gives IE6 hasLayout to properly clear */
+    clear: both;
+    color: #fff;
+    width: 100%;
+  }
+
+  .social {
+    margin-left: 20px;
+    float: left;
+    width: 5%;
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .foot_content {
+    margin-left: 20px;
+    float: left;
+    width: 80%;
+  }
+
+  .header #nav {
+    display: none;
+  }
+
+  .tinynav {
+    display: block;
+    width: 100%;
+    font-size: 150%;
+  }
+
+  iframe {
+    width: 540px;
+    max-width: 540px;
+  }
 }
 
 /************************************************************************************
 smaller than 650
 *************************************************************************************/
-@media screen and (max-width: 1200px) {
-
-
-
-}
+@media screen and (max-width: 1200px) {}
 
 /************************************************************************************
 smaller than 800
 *************************************************************************************/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {}
 
-
-
-
-}
 /************************************************************************************
 smaller than 650
 *************************************************************************************/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {}
 
-
-}
 /************************************************************************************
 smaller than 650
 *************************************************************************************/
 @media screen and (max-width: 640px) {
-/* disable webkit text size adjust (for iPhone) */
-	html { -webkit-text-size-adjust: none; }
 
-	body {
-	font-family: "Calibri",Arial, Helvetica, sans-serif;
-	background: none;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	}
-	/* ~~ Element/tag selectors ~~ */
-	ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists.*/
-		padding: 0;
-		margin: 0;
-	}
-	h1, h2, h3, h4, h5, h6, p {
-		margin-top: 0;
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-	a img {
-		border: none;
-	}
+  /* disable webkit text size adjust (for iPhone) */
+  html {
+    -webkit-text-size-adjust: none;
+  }
 
-	a:link {
-		color: #e2801d;
-		text-decoration: none;
-	}
-	a:visited {
-		color: #e2801d;
-		text-decoration: none;
-	}
-	a:hover, a:active, a:focus {
-		text-decoration: none;
-	}
+  body {
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
 
-	.container {
-		width: 100%;
-		margin: 0 auto;
-		background: #FFFFFF none;
+  /* ~~ Element/tag selectors ~~ */
+  ul, ol, dl {
+    /* Due to variations between browsers, it's best practices to zero padding and margin on lists.*/
+    padding: 0;
+    margin: 0;
+  }
 
-	}
-	.header {
-		text-align: center;
-		padding: 0px;
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-	}
+  a img {
+    border: none;
+  }
 
-	.header img
-	{
-		width: 100%;
-		height: 100%;
-	}
+  a:link {
+    color: #e2801d;
+    text-decoration: none;
+  }
 
-	#slideshow, .border_bottom
-	{
-		width: 100%;
-		height: inherit;
-	}
+  a:visited {
+    color: #e2801d;
+    text-decoration: none;
+  }
 
-	#slideshow img
-	{
-		max-width: 100%;
-		height: inherit;
-	}
+  a:hover, a:active, a:focus {
+    text-decoration: none;
+  }
 
-	.header #nav
-	{
-		background: url(images/topnav_background.jpg) repeat-x top #96835f;
-	}
-	.border_bottom
-	{
-		border-bottom: #696463 solid 1px;
-	}
-	.clear
-	{
-		clear: both;
-	}
-	.sidebar1
-	{
-		float: none;
-		width: 100%;
-		margin: auto;
-		background: #eae5dd;
-		padding-bottom: 10px;
-	}
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF none;
+  }
 
-	.sidebar1 p
-	{
-	}
+  .header {
+    text-align: center;
+    padding: 0px;
+  }
 
-	.sidebar1 img
-	{
-		width: 100%;
-		height: 75%;
-		float: left;
-		margin-right: 10px;
-	}
+  .header img {
+    width: 100%;
+    height: 100%;
+  }
 
-	.sidebar1 .city_logos img
-	{
-		width: auto;
-		height: auto;
-		float: inherit;
+  #slideshow, .border_bottom {
+    width: 100%;
+    height: inherit;
+  }
 
-	}
+  #slideshow img {
+    max-width: 100%;
+    height: inherit;
+  }
 
-	.sidebar1 h2
-	{
-		color: #325c2c;
-	}
+  .header #nav {
+    background: url(images/topnav_background.jpg) repeat-x top #96835f;
+  }
 
-	.spring_tip img
-	{
-		width: 100%;
-		height: 100%;
-	}
+  .border_bottom {
+    border-bottom: #696463 solid 1px;
+  }
 
-	.homepagespring_tip
-	{
-		width: 100%;
-		max-width: 100%;
-		float: none;
-	}
+  .clear {
+    clear: both;
+  }
 
-	.content {
-		clear: both;
-		padding: 10px 0;
-		width: 100%;
-		margin: auto;
-		float: right;
-		border-right: none;
-	}
+  .spring_tip img {
+    width: 100%;
+    height: 100%;
+  }
 
-	.content ul, .content ol {
-		padding: 0 15px 15px 40px;
-	}
+  .homepagespring_tip {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+  }
 
-	#nav ul {
-		list-style: none;
-		border-top: 1px solid #666;
-		margin-bottom: 15px;
-	}
-	#nav ul li {
-		border-bottom: 1px solid #666;
-	}
-	#nav ul a, #nav ul a:visited {
-		padding: 5px 5px 5px 15px;
-		display: block;
-		width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
-		text-decoration: none;
-		background: #C6D580;
-	}
-	#nav ul a:hover, #nav ul a:active, #nav ul a:focus {
-		background: #ADB96E;
-		color: #FFF;
-		text-decoration: none;
-	}
+  .content {
+    clear: both;
+    padding: 10px 0;
+    width: 100%;
+    margin: auto;
+    float: right;
+    border-right: none;
+  }
 
-	.header #nav ul
-	{
-		text-align: center;
-	}
-	.header #nav li
-	{
-		list-style: none;
-		padding: 9px 10px 9px 33px;
-		font-size: 120%;
-		float: left;
-	}
-	.header #nav li a:link, .header #nav li a:visited
-	{
-		font-weight: bold;
-		color: #43322e;
-	}
-	.header #nav li a:active, .header #nav li a:hover
-	{
-		color: #000;
-	}
+  .content ul, .content ol {
+    padding: 0 15px 15px 40px;
+  }
 
-	h1
-	{
-		color: #325c2c;
-	}
-	h2
-	{
-		font-size: 120%;
-	}
-	h3
-	{
-		font-size: 110%;
-	}
-	/* ~~ The footer ~~ */
-	.footer
-	{
-		padding: 10px 0;
-		background: #44332e;
-		position: relative;/* this gives IE6 hasLayout to properly clear */
-		clear: both;
-		color: #fff;
-		width: 100%;
-	}
+  #nav ul {
+    list-style: none;
+    border-top: 1px solid #666;
+    margin-bottom: 15px;
+  }
 
-	.social
-	{
-		margin-left: 20px;
-		float: left;
-		width: 5%;
-		max-width: 25px;
-		max-height: 25px;
-	}
+  #nav ul li {
+    border-bottom: 1px solid #666;
+  }
 
-	.foot_content
-	{
-		margin-left: 20px;
-		float: left;
-		width: 80%;
-	}
+  #nav ul a, #nav ul a:visited {
+    padding: 5px 5px 5px 15px;
+    display: block;
+    width: 160px;
+    /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+    text-decoration: none;
+    background: #C6D580;
+  }
 
+  #nav ul a:hover, #nav ul a:active, #nav ul a:focus {
+    background: #ADB96E;
+    color: #FFF;
+    text-decoration: none;
+  }
 
+  .header #nav ul {
+    text-align: center;
+  }
 
-	.header #nav { display: none; }
-	.tinynav
-	{
-		display:block;
-		width:100%;
-		font-size: 150%;
-	}
+  .header #nav li {
+    list-style: none;
+    padding: 9px 10px 9px 33px;
+    font-size: 120%;
+    float: left;
+  }
 
+  .header #nav li a:link, .header #nav li a:visited {
+    font-weight: bold;
+    color: #43322e;
+  }
 
-	iframe
-	{
-		width: 540px;
-		max-width: 540px;
+  .header #nav li a:active, .header #nav li a:hover {
+    color: #000;
+  }
 
-	}
+  h1 {
+    color: #325c2c;
+  }
 
+  h2 {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 110%;
+  }
+
+  /* ~~ The footer ~~ */
+  .footer {
+    padding: 10px 0;
+    background: #44332e;
+    position: relative;
+    /* this gives IE6 hasLayout to properly clear */
+    clear: both;
+    color: #fff;
+    width: 100%;
+  }
+
+  .social {
+    margin-left: 20px;
+    float: left;
+    width: 5%;
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .foot_content {
+    margin-left: 20px;
+    float: left;
+    width: 80%;
+  }
+
+  .header #nav {
+    display: none;
+  }
+
+  .tinynav {
+    display: block;
+    width: 100%;
+    font-size: 150%;
+  }
+
+  iframe {
+    width: 540px;
+    max-width: 540px;
+  }
 }
-
 
 /************************************************************************************
 smaller than 450
 *************************************************************************************/
 @media screen and (max-width: 450px) {
+  .masthead .signup img {
+    max-height: 20px;
+  }
 
-	.masthead .signup img { max-height: 20px; }
-	.masthead img
-	{
-		height: inherit;
-		max-height: inherit;
+  .masthead img {
+    height: inherit;
+    max-height: inherit;
+  }
 
-	}
+  #slideshow, #slideshow img {
+    max-width: 100%;
+    height: inherit;
+  }
 
-	#slideshow, #slideshow img
-	{
-		max-width: 100%;
-		height:  inherit;
-	}
+  .border_bottom {
+    width: 100%;
+    height: 125px;
+    max-height: 75px;
+  }
 
-	.border_bottom
-	{
-		width: 100%;
-		height: 125px;
-		max-height: 75px;
+  .spring_tip img {
+    width: 100%;
+    max-height: 324px;
+  }
 
-	}
+  .sidebar1 img {
+    width: 100%;
+    height: 250px;
+  }
 
-	.spring_tip img
-	{
-		width: 100%;
-		max-height: 324px;
-	}
+  .tinynav {
+    display: block;
+    width: 100%;
+    font-size: 150%;
+  }
 
-	.sidebar1 img
-	{
-		width: 100%;
-		height: 250px;
-
-	}
-
-	.tinynav
-	{
-		display:block;
-		width:100%;
-		font-size: 150%;
-	}
-
-	iframe
-	{
-		width: 300px;
-		max-width: 300px;
-
-	}
-
+  iframe {
+    width: 300px;
+    max-width: 300px;
+  }
 }

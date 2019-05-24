@@ -11,6 +11,16 @@ $(document).ready(function() {
 		}
 		if (windowWidth > 951) {
 			$(".header__nav__menu").show();
+
+				var maxHeight = 0;
+
+				$(".content__match_height").each(function() {
+					if ($(this).height() > maxHeight) {
+						maxHeight = $(this).height();
+					}
+				});
+
+				$(".content__match_height").height(maxHeight);
 		}
 	}
 	checkWidth();
