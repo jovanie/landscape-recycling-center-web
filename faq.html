@@ -30,10 +30,10 @@ TODO: When you click one question, all other answers minimize.
 		</div>
 
 		<div class="content--main">
-			<div class="content content__match_height">
+			<div class="content">
 				<h1>Frequently Asked Questions</h1>
 				<div class="faq__menu">
-					<div class="faq__menu__tag">
+					<div class="faq__menu__tag" id="site-info">
 						<h2>SITE INFO</h2>
 						<ul class="faq__menu__tag__list">
 							<li class="faq__menu__tag__list__entry">
@@ -58,7 +58,7 @@ TODO: When you click one question, all other answers minimize.
 							</li>
 						</ul>
 					</div>
-					<div class="faq__menu__tag">
+					<div class="faq__menu__tag" id="payment">
 						<h2>PAYMENT</h2>
 						<ul class="faq__menu__tag__list">
 							<li class="faq__menu__tag__list__entry">
@@ -71,7 +71,7 @@ TODO: When you click one question, all other answers minimize.
 							</li>
 						</ul>
 					</div>
-					<div class="faq__menu__tag">
+					<div class="faq__menu__tag" id="disposal">
 						<h2>DISPOSAL</h2>
 						<ul class="faq__menu__tag__list">
 							<li class="faq__menu__tag__list__entry">
@@ -112,29 +112,265 @@ TODO: When you click one question, all other answers minimize.
 							</li>
 						</ul>
 					</div>
-					<script>
-						$(window).load(function() {
-							$('.faq__menu__tag__list__entry__q').click(function() {
-								$(this).siblings(".faq__menu__tag__list__entry__content").slideToggle();
-								$(this).toggleClass("faq__menu__tag__list__entry__q--active");
-
-
-									var maxHeight = 0;
-									var newHeight = $(this).parent().find(".faq__menu__tag__list__entry__content").height();
-									$(".content__match_height").each(function() {
-										if ($(this).height() > maxHeight) {
-											maxHeight = $(this).height();
-											if ((maxHeight + newHeight) > maxHeight) {
-												maxHeight += newHeight +16;
-											}
-										}
-									});
-
-									$(".content__match_height").height(maxHeight);
-							});
-						});
-					</script>
+					<div class="faq__menu__tag" id="general">
+						<h2>GENERAL PRODUCT INFO</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Do you sell bagged products?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. All of our recycled products are sold in bulk, either by the cubic yard or per bag/container. Please bring your own buckets, gardening tubs or yard-waste bags to take the product
+									home.<br>
+									If you need delivery, please see our delivery FAQs.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How much product is considered a container or bag?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Up to 35 dry gallons of product, whether in leaf bags, buckets or trash cans.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How much product is considered a cubic yard?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">A cubic yard is 3 feet x 3 feet x 3 feet or 27 cubic feet.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="garden-compost">
+						<h2>GARDEN COMPOST</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How much soil is in your Garden Compost?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">There is a very limited amount of local soil in the Screened Garden Compost. It is not a soil, but rather a natural fertilizer for soil.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What is your Garden Compost made from?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">100% local leaf, grass and vegetable material. It requires over a year for LRC to complete the process of creating the compost. Watch how it’s made!
+									[https://www.youtube.com/watch?v=NVuU1-saS1U]</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Other than for vegetable gardening, how can Garden Compost be used?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Compost adds helpful nutrients to flower beds, potted plants and window boxes; new/existing lawns; and new/existing trees and shrubs. For detailed instructions, visit
+									[http://www.landscaperecyclingcenter.org/files/compost.pdf]</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>When should I use Garden Compost for my lawn?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">If you are over-seeding and want to establish a better stand of turf with seed, it’s best to start with the Garden Compost. Applying Stable-To-Soil Enhancer to new seed could burn the
+									roots. Screened Garden Compost can be added to a depth of up to ½” for a good seed bed. After aeration is a great time to apply.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I use Garden Compost to fill the space where a tree stump was removed?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">It is recommended that you use a majority soil product like our Pulverized Topsoil Blend -- a mixture of compost (nutrients) and soil (structure) -- for this purpose. Compost alone is
+									spongy and typically settles, making it a less-than-ideal solution to fill spaces of depth, i.e. where tree stumps have been removed.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>If it’s raining, will the Garden Compost be too wet to work with?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">The Garden Compost is more workable when damp or wet than soil and dries out faster than topsoil.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="stable-to-soil-enhancer">
+						<h2>STABLE-TO-SOIL ENHANCER</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I use the Stable-To-Soil Enhancer in my vegetable garden?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Our Stable-To-Soil Enhancer (formerly known as mushroom compost) is made from hardwood bark, straw material and horse manure from local stables. It’s composted into a high-quality
+									finished product, but because it contains manure, it should <strong>not</strong> be used for growing food crops.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How can Stable-To-Soil Enhancer be used?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">It should be thoroughly mixed with topsoil and can be used as a top dressing for flower gardens, turf and other non-food crop landscapes.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>When should I use Stable-To-Soil Enhancer for my lawn?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">If you already have a good stand of turf and are looking to enhance it, the Stable-To-Soil Enhancer is an excellent source of nitrogen, phosphorus and potassium to green up your lawn. It
+									also returns organic matter and other nutrients such as calcium, magnesium and sulfur to the soil to improve fertility and quality. If using the Enhancer, apply just enough to supply the turf’s root system – about 1/8” to 1/4” deep.
+									After aeration is a great time to apply.</p>
+							</li>
+						</ul>
+					</div>
 					<div class="faq__menu__tag">
+						<h2>MULCHES</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What’s the difference between your Premium and Standard shredded mulches?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Premium Mulches go through a longer and more refined finishing process so the content has a finer, more uniform texture with smaller pieces throughout.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Why is the Premium variety darker?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Additional composting and screening produces a finer material that is saturated in organic nutrients, which gives the product a darker color.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Is there a bark-only material?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Bark only mulches are products of lumber mills. LRC mulches are products of local tree and landscape work.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What is a good depth of mulch to suppress weeds?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">We recommend 2-3 inches of mulch depth.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Do you have colored mulch?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. All of our mulches are their natural color.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag">
+						<h2>TOPSOIL BLEND</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What is LRC Pulverized Topsoil?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Our Pulverized Topsoil Blend is a mix of garden compost and local soil that is rich in organic nutrients and friable with sufficient structure to be utilized as a backfill material for
+									landscape, garden and turf areas.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How much can I get in a regular-size pick-up truck?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Our Topsoil weighs 1 ton per cubic yard (2,000 pounds). Most trucks and small trailers will safely handle only half a cubic yard (1,000 pounds).</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I load the Topsoil Blend if it’s raining?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Since the blend is mostly soil, excessive moisture makes it too muddy to easily work with.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="BYOB">
+						<h2>B.Y.O.B. PUNCH CARD</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What are the dates for the B.Y.O.B. Punch Card Program?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">The program is valid from the date of purchase until December 31 of the same year.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Do you provide the bucket?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. You must provide your own five-gallon bucket.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>If I don’t have a bucket, can I use something else?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No, only 5-gallon bucket are acceptable for the B.Y.O.B. Punch Card Program. </p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How much product can I get per punch?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">You can fill up to 7 buckets of Garden Compost, Stable-to-Soil Enhancer, Premium Shredded Mulch, Premium Chipped Mulch, Standard Shredded Mulch or Select Chipped Mulch for each punch.
+									There is a maximum of 42 buckets for each punch card. (Cannot be used for Pulverized Topsoil Blend.)</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="split-firewood">
+						<h2>SPLIT FIREWOOD</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Is it hardwoods?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">There is a variety of unseasoned deciduous tree woods that are by-products of local tree maintenance. We cannot guarantee that it is all hardwoods, however, you are allowed to select
+									your own pieces.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Is it seasoned, dried or good for burning in a fireplace?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. All of our wood has been freshly cut, so it is green. </p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Will someone load the split firewood?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. You must load your own.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What is the length of your split firewood?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Pieces vary in length from 10 inches to 2 feet.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What is the measurement for a rick of wood?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">A rick of wood measures roughly 8 feet x 4 feet x 2 feet.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>If I don’t need that much, can I purchase less than a rick but more than a bundle?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Yes. We sell smaller amounts of split wood. 15 pieces is $7; ¼ of a rick is $17.50.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Do you offer split firewood in the summer?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">There is no guarantee we will have split firewood in the summer.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can you deliver split firewood?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="bulk-wood">
+						<h2>BULK WOOD</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What kind of wood is it?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Various deciduous tree woods that are by-products of local tree maintenance; most pine wood has been sorted out. It is generally unseasoned, although seasoned pieces are recognizable as
+									the wood darkens and turns gray.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Is it really free?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Yes.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I come after hours and load my own free wood?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How does it get loaded?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Bulk wood is self-load only.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I use my own log splitter/chainsaw at the site?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Yes. You may bring your own tools.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="quartered-wood">
+						<h2>QUARTERED WOOD</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>What is the size range for the quartered wood?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">The pieces are roughly 3 feet long and about 1 foot wide.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>How does it get loaded?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">$5/load if LRC loads into dump truck or open trailer. Free is self-loaded.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can bulk wood be burned in an indoor fireplace?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No, but it works great for outdoor bonfires.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="faq__menu__tag" id="delivery">
+						<h2>DELIVERY</h2>
+						<ul class="faq__menu__tag__list">
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>If I don’t own a truck, what other options do I have to transport the products I purchase?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">
+									You may use any type of vehicle, rent a truck, or utilize our fee-based delivery service [http://landscaperecyclingcenter.org/files/2019_Delivery_Fees_and_Rules_3-1-19.pdf].
+									OR
+									If our delivery truck is too busy to accommodate your schedule, you can also contact one of the recommended private contractors listed on our website: [http://landscaperecyclingcenter.org/files/2017_Hauler_Information.pdf]</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I pay by phone for delivery?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No, since we are not able to take credit/debit cards.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can you dump the product on the street in front of my house?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. We are only allowed to place the product on your property. We cannot unload material on city right of way and since the sidewalk is city property, we also cannot dump product across
+									the sidewalk.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Do I need to be home at the time of delivery?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. There is a special section of the delivery form where you can leave specific instructions for the delivery driver.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can you drive over the grass?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Driving over grass is against our delivery policy. However, we do try to accommodate your delivery needs as much as possible.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can you deliver on a Sunday?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">No. LRC is closed on Sundays.</p>
+							</li>
+							<li class="faq__menu__tag__list__entry">
+								<p class="faq__menu__tag__list__entry__q"><strong>Can I mix a load of products?</strong></p>
+								<p class="faq__menu__tag__list__entry__content">Yes, but there are limitations to the amounts that can be delivered without an additional charge. It is best to keep products in separate loads to avoid the materials from being mixed
+									together when transported.</p>
+							</li>
+						</ul>
+					</div>
+
+					<!--
+						<div class="faq__menu__tag">
 						<h2>Category</h2>
 						<ul class="faq__menu__tag__list">
 							<li class="faq__menu__tag__list__entry">
@@ -143,13 +379,36 @@ TODO: When you click one question, all other answers minimize.
 							</li>
 						</ul>
 					</div>
+				-->
+					<script>
+						$(window).load(function() {
+							$('.faq__menu__tag__list__entry__q').click(function() {
+								$(this).siblings(".faq__menu__tag__list__entry__content").slideToggle();
+								$(this).toggleClass("faq__menu__tag__list__entry__q--active");
+
+
+								var maxHeight = 0;
+								var newHeight = $(this).parent().find(".faq__menu__tag__list__entry__content").height();
+								$(".content__match_height").each(function() {
+									if ($(this).height() > maxHeight) {
+										maxHeight = $(this).height();
+										if ((maxHeight + newHeight) > maxHeight) {
+											maxHeight += newHeight + 16;
+										}
+									}
+								});
+
+								$(".content__match_height").height(maxHeight);
+							});
+						});
+					</script>
 				</div>
 			</div>
-		</div>
-		<div class="sidebar content__match_height">
-			<script>
-				$('.sidebar').load('sidebar_calendar.html');
-			</script>
+			<div class="sidebar">
+				<script>
+					$('.sidebar').load('sidebar_calendar.html');
+				</script>
+			</div>
 		</div>
 
 		<div class="dirt_bottom">
