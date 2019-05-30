@@ -26,3 +26,9 @@ $(document).ready(function() {
 	checkWidth();
 	$(window).resize(checkWidth);
 });
+
+$(window).on('load', function() {
+  if ($(".sidebar").height() > $(".content").height()) {
+    $(".content").height($(".sidebar").height());
+  }
+});
