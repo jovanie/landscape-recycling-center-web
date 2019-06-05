@@ -67,15 +67,20 @@ body {}
 		&__menu {
 			list-style: none;
 			text-align: left;
-			display: inline-block;
 			margin: 0;
 			padding: 0;
 			width: 100%;
+			display: flex;
+  		flex-direction:row;
+			margin:0 0;
+  		padding:0 0; /* this */
 
 			&__entry {
+  			flex:1 1 auto;
+  			margin:0 9px;
+				padding:9px 0;
+				flex-wrap: nowrap;
 				list-style: none;
-				display: inline;
-				padding: 9px 40px 9px 0;
 				font-size: 120%;
 				font-size: 1.2em;
 				float: left;
@@ -83,7 +88,7 @@ body {}
 				color: #43322e;
 
 				&:first-of-type {
-					padding-left: 15px;
+					padding-left: 9px;
 				}
 
 				&__link {
