@@ -5,9 +5,6 @@ $(document).ready(function() {
   } else {
     $(".sidebar__banner").prependTo(".sidebar");
   }
-  $(".header__banner__button").click(function() {
-    $(".header__nav").slideToggle(500);
-  });
 });
 
 //Jquery Mobile Nav Toggle
@@ -49,6 +46,6 @@ $(window).on('load', function() {
     $(".content").height($(".sidebar").height());
   }
   $(".header__banner__button").click(function() {
-    $(".header__nav").slideToggle(500);
+    $(".header__nav").stop().slideToggle(500);
   });
 });
