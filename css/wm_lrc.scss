@@ -168,6 +168,7 @@ body {}
 	border-right: #696463 solid 1px;
 	width: 619px;
 	padding-bottom: 6em;
+	min-height:25vh;
 
 	&--recycled-products {
 		width: 100%;
@@ -312,61 +313,6 @@ body {}
 			}
 		}
 
-		&__nav {
-			position: relative;
-			width:100%;
-			height:unset;
-
-			&__menu {
-				position: absolute;
-				display: block;
-				left: 0;
-				right: 0;
-				top:0;
-				width:100%;
-				transform: translate(0,0);
-				margin: 0 auto;
-				padding: 0;
-				background: inherit;
-				background: white;
-				z-index: 999;
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-				max-height:100%;
-
-				&__entry {
-					color: #A7A9AB;
-					padding: 0.7em 0;
-					font-size: 1.25rem;
-					border-bottom: 1.5px solid #F0F0F0;
-					text-decoration: none;
-					list-style: none;
-					display: block;
-					text-align: center;
-					width: 100%;
-					position: relative;
-					background: white;
-
-					&__link {
-						padding: 1em;
-					}
-
-					&__link,
-					&__link:link,
-					&__link:visited {}
-
-					&__link:hover {}
-				}
-
-				&__entry:first-of-type {
-					padding-left: 0;
-				}
-			}
-		}
 	}
 }
 @media only screen and (max-width: 440px) {

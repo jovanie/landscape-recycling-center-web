@@ -5,12 +5,12 @@ $(document).ready(function() {
 
 //Jquery Mobile Nav Toggle
 function checkWidth() {
-  var windowWidth = $(window).width();
-  if (windowWidth <= 650) {
-    $(".header__nav__menu").hide();
+  var windowWidth = window.innerWidth;
+  if (windowWidth <  767) {
+    $(".header__nav").hide();
   }
-  if (windowWidth > 650) {
-    $(".header__nav__menu").show();
+  if (windowWidth >  767) {
+    $(".header__nav").show();
 
     var maxHeight = 0;
 
@@ -22,11 +22,21 @@ function checkWidth() {
 
     $(".content__match_height").height(maxHeight);
   }
+
+  if(window.innerWidth < 481) {
+    $(".sidebar__banner").insertBefore(".content");
+  }
+  else {
+    $(".sidebar__banner").prependTo(".sidebar");
+  }
 }
 checkWidth();
 $(window).resize(checkWidth);
 
 $(window).on('load', function() {
+  if(window.innerWidth < 481) {
+    $(".sidebar__banner").insertBefore(".content");
+  }
   if ($(".sidebar").height() > $(".content").height()) {
     $(".content").height($(".sidebar").height());
   }
