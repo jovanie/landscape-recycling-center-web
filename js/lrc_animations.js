@@ -5,6 +5,9 @@ $(document).ready(function() {
   } else {
     $(".sidebar__banner").prependTo(".sidebar");
   }
+  $(".header__banner__button").click(function() {
+    $(".header__nav").slideToggle(500);
+  });
 });
 
 //Jquery Mobile Nav Toggle
