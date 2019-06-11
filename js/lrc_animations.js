@@ -1,4 +1,7 @@
 //Jquery Slide Animation for Mobile Nav Menu
+$(".header__banner__button").click(function() {
+  $(".header__nav").stop().slideToggle(500);
+});
 $(document).ready(function() {
   if (window.innerWidth < 481) {
     $(".sidebar__banner").insertBefore(".content");
