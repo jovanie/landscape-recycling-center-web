@@ -130,7 +130,12 @@ header {
         transform: translate(0, -50%);
         z-index: 999;
         padding: 0.5em;
+        color:black;
         cursor: pointer;
+        i {
+
+        }
+        &:visited, &:active {color:black;}
       }
     }
 
@@ -152,8 +157,8 @@ header {
         &__entry {
           color: #A7A9AB;
           margin: 0;
-          padding: 0.7em 0;
-          font-size: 1.25rem;
+          padding: 0.5em 0;
+          font-size: 1.0rem;
           border-bottom: 1.5px solid #F0F0F0;
           text-decoration: none;
           list-style: none;
