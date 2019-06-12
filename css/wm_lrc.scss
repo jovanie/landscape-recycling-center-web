@@ -417,3 +417,239 @@ ul.--no-list-style {
 p.font-size-80 {
 	font-size: 80%;
 }
+
+header {
+  &__nav {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    background: url("../images/topnav_background.jpg") repeat-x top #96835f;
+
+    &__button {
+      display: none;
+    }
+
+    &__menu {
+      list-style: none;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      /* this */
+      &__entry {
+        flex: 1 1 auto;
+        margin: 0 9px;
+        padding: 9px 0;
+        flex-wrap: nowrap;
+        list-style: none;
+        font-size: 120%;
+        font-size: 1.2em;
+        float: left;
+        white-space: nowrap;
+        color: #43322e;
+
+        &:first-of-type {
+          padding-left: 9px;
+        }
+
+        &__link {
+          font-weight: bold;
+        }
+
+        &__link,
+        &__link:link,
+        &__link:visited {
+          color: inherit;
+        }
+
+        &__link:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  header__nav__menu__entry:first-of-type {}
+
+  .header {
+    &__banner {
+      &__logo {}
+    }
+
+    &__nav {
+      display: block;
+      height: 40px;
+
+      &__button {
+        display: none;
+      }
+
+      &__menu {
+        list-style: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        &__entry {
+          flex: 1 1 auto;
+          margin: 0 9px;
+          padding: 0;
+          flex-wrap: nowrap;
+          list-style: none;
+          font-size: 120%;
+          font-size: 1.2em;
+          float: left;
+          white-space: nowrap;
+          color: #43322e;
+
+          &:first-of-type {
+            padding-left: 9px;
+          }
+
+          &__link {
+            font-weight: bold;
+          }
+
+          &__link,
+          &__link:link,
+          &__link:visited {
+            color: inherit;
+          }
+
+          &__link:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 22.5vw;
+
+    &__banner {
+      &__button,
+      &__button--mobile {
+        display: inline-block;
+        position: absolute;
+        font-size: 2rem;
+        top: 55%;
+        right: 1rem;
+        transform: translate(0, -50%);
+        z-index: 999;
+        padding: 0.5em;
+        cursor: pointer;
+      }
+    }
+
+    &__nav {
+      all: unset;
+      display: none;
+      position: absolute;
+      width: 100%;
+
+      &__menu {
+        all: unset;
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 8em;
+        background: blue;
+        width: 100%;
+
+        &__entry {
+          color: #A7A9AB;
+          margin: 0;
+          padding: 0.7em 0;
+          font-size: 1.25rem;
+          border-bottom: 1.5px solid #F0F0F0;
+          text-decoration: none;
+          list-style: none;
+          display: block;
+          text-align: center;
+          width: 100%;
+          position: relative;
+          background: white;
+
+          &__link {
+            padding: 1em;
+          }
+
+          &__link,
+          &__link:link,
+          &__link:visited {}
+
+          &__link:hover {}
+
+          &:first-of-type {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .content,
+  .sidebar,
+  .sidebar1 {
+  	padding-bottom: 0;
+  }
+  .content,
+  .sidebar1 {
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .sidebar,
+  .sidebar1 {
+    border: none;
+    width: 100%;
+  }
+
+  .sidebar1 p {}
+
+  .sidebar__banner {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    img {
+      margin-top: -15%;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .sidebar__text {}
+
+  .sidebar .city_logos {
+    height: 60px;
+    max-height: 60px;
+  }
+
+  .sidebar .city_logos img {
+    height: 100%;
+    width: auto;
+  }
+
+  .sidebar1 h2 {
+    color: #325c2c;
+  }
+}
