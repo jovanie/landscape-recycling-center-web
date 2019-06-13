@@ -1,14 +1,16 @@
 $(document).ready(function() {
-  $(".header__banner__button").on('click', function() {
-    $('.header__nav').slideToggle();
-  });
+
   //$(".header__banner__button").click(function() {
-    //$('.header__nav').slideToggle();
+  //$('.header__nav').slideToggle();
   //});
 });
 
 // Once Document has loaded
 $(window).on('load', function() {
+  $(".header__banner__button").on('click', function() {
+    $('.header__nav').slideToggle();
+  });
+
   function checkWidth() {
     var maxHeight = 0;
 
