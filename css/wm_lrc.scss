@@ -610,6 +610,12 @@ header {
 	}
 }
 @media only screen and (max-width: 480px) {
+	.header {
+		height:5em;
+		&__banner {
+			height: 5em;
+		}
+	}
 	.content,
 	.sidebar,
 	.sidebar1 {
