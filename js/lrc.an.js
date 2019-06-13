@@ -35,10 +35,12 @@ $(window).resize(checkWidth);
 $(window).on('load', function() {
   if (window.innerWidth < 481) {
     $(".sidebar__banner").insertBefore(".content");
-  } else {
-    $(".sidebar__banner").prependTo(".sidebar");
+  } else {}
+
+  if (window.innerWidth < 767) {
+    $(".header__nav").hide();
   }
-  if ($(".sidebar").height() > $(".content").height()) {
-    $(".content").height($(".sidebar").height());
+  if (window.innerWidth > 767) {
+    $(".header__nav").show();
   }
 });
