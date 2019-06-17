@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 // Once Document has loaded
-$(window).on('load', function() {
+$(window).on('load', function () {
   $(".header__banner__button").on('click', function() {
     $('.header__nav').slideToggle();
   });

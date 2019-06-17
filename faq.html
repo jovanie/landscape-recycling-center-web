@@ -384,28 +384,7 @@
 						</ul>
 					</div>
 				-->
-					<script>
-						$(window).load(function() {
-							$('.faq__menu__tag__list__entry__q').click(function() {
-								$(this).siblings(".faq__menu__tag__list__entry__content").slideToggle();
-								$(this).toggleClass("faq__menu__tag__list__entry__q--active");
-
-
-								var maxHeight = 0;
-								var newHeight = $(this).parent().find(".faq__menu__tag__list__entry__content").height();
-								$(".content__match_height").each(function() {
-									if ($(this).height() > maxHeight) {
-										maxHeight = $(this).height();
-										if ((maxHeight + newHeight) > maxHeight) {
-											maxHeight += newHeight + 16;
-										}
-									}
-								});
-
-								$(".content__match_height").height(maxHeight);
-							});
-						});
-					</script>
+				<script src="js/faq.js"></script>
 				</div>
 			</div>
 			<div class="sidebar">
