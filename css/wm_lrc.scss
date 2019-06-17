@@ -222,7 +222,7 @@ iframe {
 		margin: 0 auto;
 		position: relative;
 		width: 340px;
-		padding: 2em 0 2.5em 0;
+		padding: 2em 0 2.5em;
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -410,7 +410,7 @@ iframe {
 		}
 
 		.sidebar__text {
-			padding:1em 0;
+			padding: 1em 0;
 		}
 
 		.sidebar .city_logos {
@@ -431,6 +431,88 @@ iframe {
 
 	.dirt_bottom {
 		display: none;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.container__main {
+
+		.content,
+		.sidebar {
+		}
+
+		.content {
+		}
+
+		.sidebar {
+		}
+
+		.sidebar__banner {
+
+			img {
+			}
+		}
+
+		.sidebar__text {
+		}
+
+		.sidebar .city_logos {
+		}
+
+		.sidebar .city_logos img {
+		}
+
+		.sidebar1 h2 {
+		}
+	}
+
+	.dirt_bottom {
+	}
+
+	.container {}
+
+	.header {
+		&__banner {
+
+			&__button {
+
+				i {}
+
+				&:active,
+				&:link,
+				&:visited {
+					color: black;
+				}
+			}
+
+			&__logo {
+				height:3.25em;
+			}
+		}
+
+		&__nav {
+
+			&__menu {
+
+				&__entry {
+					padding: 0.25em 0;
+					font-size: 1.15em;
+
+					&__link {
+						padding: 0.75em;
+					}
+
+					&__link,
+					&__link:link,
+					&__link:visited {}
+
+					&__link:hover {}
+
+					&:first-of-type {
+						padding-left: 0;
+					}
+				}
+			}
+		}
 	}
 }
 
