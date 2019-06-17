@@ -334,7 +334,7 @@ iframe {
 		&__nav {
 			all: unset;
 			display: block;
-			display:none;
+			display: none;
 			position: absolute;
 			width: 100%;
 
@@ -508,6 +508,17 @@ iframe {
 		display: none;
 	}
 }
+@media screen and (max-width: 450px) {
+	#slideshow,
+	#slideshow img,
+	.border_bottom {
+		width: 100%;
+		height:inherit;
+		max-height:inherit;
+		/* height: 75px; */
+		/* max-height: 75px; */
+	}
+}
 @media only screen and (max-width: 375px) {
 	.container__main {
 		.content,
@@ -628,6 +639,6 @@ ul.--no-list-style {
 }
 
 p.font-size-80 {
-	padding-top:0.5em;
+	padding-top: 0.5em;
 	font-size: 80%;
 }
