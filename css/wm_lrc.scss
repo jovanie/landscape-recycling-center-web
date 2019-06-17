@@ -126,8 +126,9 @@ iframe {
 			height: auto;
 			margin: 0 auto;
 			padding-bottom: 6em;
+
 			&--recycled-products {
-				background:white;
+				background: white;
 			}
 		}
 	}
@@ -177,7 +178,7 @@ iframe {
 }
 
 .slideshow {
-	background:white;
+	background: white;
 	border-bottom: #696463 solid 1px;
 }
 
@@ -236,14 +237,14 @@ iframe {
 }
 
 .dirt_bottom {
-	display:inline-block;
-	 position: absolute;
+	display: inline-block;
+	position: absolute;
 	margin: 0;
 	padding: 0;
 	bottom: 0;
 	width: 100%;
-	min-height:60px;
-	max-height:128px;
+	min-height: 60px;
+	max-height: 128px;
 	height: auto;
 
 	img {
@@ -251,6 +252,16 @@ iframe {
 		width: 100%;
 		height: auto;
 		bottom: 0;
+		z-index: 600;
+	}
+
+	.shovel-girl {
+		position: absolute;
+		height: 600px;
+		width: auto;
+		bottom: 1em;
+		left: 1em;
+		z-index: 601;
 	}
 }
 @media only screen and (max-width: 967px) {
@@ -276,6 +287,12 @@ iframe {
 		position: relative;
 		width: 340px;
 		padding: 2em 0 2.5em;
+	}
+
+	.dirt_bottom {
+		.shovel-girl {
+			display: none;
+		}
 	}
 }
 @media only screen and (max-width: 767px) {
