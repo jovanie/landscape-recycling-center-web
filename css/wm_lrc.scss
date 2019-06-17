@@ -10,6 +10,7 @@ iframe {
 	width: 950px;
 	margin: 0 auto;
 	padding: 0;
+	background: none;
 }
 
 .header {
@@ -185,18 +186,66 @@ iframe {
 	img {}
 }
 
+.footer {
+	position: relative;
+	height: 2.5em;
+	margin: 0;
+	padding: 0;
+
+	&__info {
+		height: auto;
+		padding: 0.25em 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.social {
+			float: none;
+			display: inline;
+			padding-right: 15px;
+		}
+
+		ul {
+			text-align: center;
+			float: none;
+			display: inline;
+			list-style: none;
+
+			.divider {
+				display: inline;
+			}
+
+			li {
+				display: inline;
+				padding: 0.25em 0;
+				margin: 0;
+			}
+		}
+	}
+
+	a,
+	a:link,
+	a:visited {
+		color: white;
+	}
+}
+
 .dirt_bottom {
-	position: absolute;
+	display:inline-block;
+	 position: absolute;
 	margin: 0;
 	padding: 0;
 	bottom: 0;
-	padding-bottom: 2em;
+	width: 100%;
+	min-height:60px;
+	max-height:128px;
+	height: auto;
 
 	img {
+		position: absolute;
 		width: 100%;
 		height: auto;
-		margin: 0;
-		padding: 0;
 		bottom: 0;
 	}
 }
@@ -306,6 +355,10 @@ iframe {
 				}
 			}
 		}
+	}
+
+	.footer {
+		display: none;
 	}
 }
 @media only screen and (max-width: 650px) {
@@ -435,46 +488,33 @@ iframe {
 }
 @media only screen and (max-width: 375px) {
 	.container__main {
-
 		.content,
-		.sidebar {
-		}
+		.sidebar {}
 
-		.content {
-		}
+		.content {}
 
-		.sidebar {
-		}
+		.sidebar {}
 
 		.sidebar__banner {
-
-			img {
-			}
+			img {}
 		}
 
-		.sidebar__text {
-		}
+		.sidebar__text {}
 
-		.sidebar .city_logos {
-		}
+		.sidebar .city_logos {}
 
-		.sidebar .city_logos img {
-		}
+		.sidebar .city_logos img {}
 
-		.sidebar1 h2 {
-		}
+		.sidebar1 h2 {}
 	}
 
-	.dirt_bottom {
-	}
+	.dirt_bottom {}
 
 	.container {}
 
 	.header {
 		&__banner {
-
 			&__button {
-
 				i {}
 
 				&:active,
@@ -485,14 +525,12 @@ iframe {
 			}
 
 			&__logo {
-				height:3.25em;
+				height: 3.25em;
 			}
 		}
 
 		&__nav {
-
 			&__menu {
-
 				&__entry {
 					padding: 0.25em 0;
 					font-size: 1.15em;
@@ -513,6 +551,10 @@ iframe {
 				}
 			}
 		}
+	}
+
+	.footer {
+		display: none;
 	}
 }
 
@@ -561,10 +603,6 @@ ul.--no-list-style {
 	width: 100%;
 	height: 100vh;
 	bottom: 0;
-}
-
-.footer {
-	position: relative;
 }
 
 p.font-size-80 {
