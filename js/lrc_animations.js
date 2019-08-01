@@ -8,6 +8,27 @@ $(window).on('load', function () {
     $('.header__nav').slideToggle();
   });
 
+  function checkHeight(heightAlpha, heightBeta) {
+    var maxHeight = 0;
+    var windoowHeight = window.innerHeight;
+    var heightA = heightAlpha;
+
+    //alert(heightA);
+    var heightB = heightBeta;
+
+    //alert(heightB);
+    if (heightA > maxHeight) {
+      maxHeight = heightA;
+    }
+
+    if (heightB > maxHeight) {
+      maxHeight = heightB;
+    }
+
+    //alert(maxHeight);
+    return maxHeight;
+  }
+
   function checkWidth() {
     var maxHeight = 0;
 
@@ -31,7 +52,7 @@ $(window).on('load', function () {
         }
       });
 
-      $('.content, .sidebar').height(maxHeight);
+      $('.content:not(.content--faq), .sidebar').height(maxHeight);
     }
 
     if (window.innerWidth < 767) {
@@ -48,8 +69,7 @@ $(window).on('load', function () {
 
   $('.faq__menu__tag__list__entry__q').click(function () {
     $(this).siblings('.faq__menu__tag__list__entry__content').slideToggle();
+
     $(this).toggleClass('faq__menu__tag__list__entry__q--active');
   });
-
-  checkWidth();
 });
