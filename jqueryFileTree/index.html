@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Images | LRC</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<style type="text/css">
+		BODY,
+		HTML {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		BODY {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			background: #EEE;
+			padding: 0;
+		}
+
+		H1 {
+			font-family: Georgia, serif;
+			font-size: 24px;
+			font-weight: normal;
+		}
+
+		H2 {
+			font-family: Georgia, serif;
+			font-size: 20px;
+			font-weight: normal;
+			margin: 0px 0px 10px 0px;
+		}
+
+		.example {
+			position: relative;
+			margin: 8px;
+			float:left;
+			height: calc(100vh - 16px);
+			width: calc(375px - 16px);
+		}
+
+		.demo {
+			position: relative;
+			max-height:calc(100vh - 16px);
+			max-width: calc(375px - 16px);
+			border-top: solid 1px #BBB;
+			border-left: solid 1px #BBB;
+			border-bottom: solid 1px #FFF;
+			border-right: solid 1px #FFF;
+			background: #FFF;
+			overflow: scroll;
+			font-size: 16px;
+		}
+	</style>
+
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery.easing.js" type="text/javascript"></script>
+	<script src="jqueryFileTree.js" type="text/javascript"></script>
+	<link href="jqueryFileTree.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<script type="text/javascript">
+		function openFile(file) {
+			window.open(file);
+		}
+		$(document).ready(function() {
+			$('#fileTreeDemo_2').fileTree({
+				root: '../../images/',
+				script: 'connectors/jqueryFileTree.php',
+				folderEvent: 'click',
+				expandSpeed: 750,
+				collapseSpeed: 750
+			}, function(file) {
+				openFile(file);
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="example">
+		<div id="fileTreeDemo_2" class="demo"></div>
+	</div>
+
+</body>
+
+</html>
