@@ -642,3 +642,37 @@ p.font-size-80 {
 	padding-top: 0.5em;
 	font-size: 80%;
 }
+
+.sticky-top {
+	display: block;
+	color: white;
+	min-height: 35px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 40px;
+	background: #E37F1D;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.75);
+
+	&-text {
+		padding: 10px;
+	}
+}
+
+.sticky-top:link,
+.sticky-top:visited {
+	background: #E37F1D;
+	color: white;
+}
+
+.header__banner__signup {
+	display: none;
+}
